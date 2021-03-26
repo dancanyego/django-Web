@@ -26,5 +26,5 @@ class AppointmentView(View):
         if(name and phone and email and doctor and date and time):
             Appointment.objects.create(
                 name=name, phone=phone, email=email, doctor=doctor, date=date, time=time, note=note)
-            messages.success(request,'Appointment done successfully')
+            messages.success(request,'Donation done successfully')
         return redirect('appointment')

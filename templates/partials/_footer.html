@@ -4,15 +4,15 @@
     <div class="container">
       <div class="row">
         <div class="col-md-3 col-sm-6">
-          <div class="widget"> <img class="ft-logo" src="{% static 'heartcare/images/footer-logo.png' %}" alt="">
-            <p>The Heart Care Heart Hospital have latest technology machines with experty Heart specialist doctors
+          <div class="widget"> <img class="ft-logo" src="{% static 'heartcare/images/TOG.jpeg' %}" alt="">
+            <p>TheOtherGuysKe Is commited In Serving the Children and The Needy People In The society We Are Commited
               consectetur adipisicing elit. Distinctio vitae maiores enim ea atque? Natus iure autem cumque, quaerat
               distinctio pariatur velit illo hic a eos paccusamus. </p>
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
           <div class="widget">
-            <h3>Our Services</h3>
+            <h3>Our Impacts</h3>
             <ul>
               {% for service in services|slice:':8' %}
               <li><a href="{% url 'service_details' service.id %}"><i class="fa fa-arrow-right"></i>
@@ -23,7 +23,7 @@
         </div>
         <div class="col-md-3 col-sm-6">
           <div class="widget">
-            <h3>Expert Doctors</h3>
+            <h3>Our Branches</h3>
             <ul>
               {% for doctor in doctors|slice:':8' %}
               <li><a href="{% url 'doctor_details' doctor.id %}"><i class="fa fa-arrow-right"></i> {{ doctor.name }}</a>
@@ -38,11 +38,11 @@
             <address>
               <ul>
                 <li> <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span> <span
-                    class="add-text"><strong>Main Branch:</strong> Dhanmondi 27, Dhaka</span> </li>
+                    class="add-text"><strong>Main Branch:</strong> Eldoret, Kenya</span> </li>
                 <li> <span class="icon"><i class="fa fa-phone-square" aria-hidden="true"></i></span> <span
-                    class="add-text"><strong>Call us Anytime at:</strong> +8801719058105</span> </li>
+                    class="add-text"><strong>Call us Anytime at:</strong> +254701549588</span> </li>
                 <li> <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span> <span
-                    class="add-text"><strong>For Inquiry:</strong> info@heartcare.com</span> </li>
+                    class="add-text"><strong>For Inquiry:</strong> info@theotherguyske.org</span> </li>
                 <li> <span class="icon"><i class="fa fa-clock-o" aria-hidden="true"></i></span> <span
                     class="add-text"><strong>Our Timings:</strong> Mon-Sat: 9:00am-7:00pm</span> </li>
               </ul>
@@ -63,7 +63,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <p><strong>HeartCare</strong> © {% now 'Y' %}, All Rights Reserved, Design & Developed By Mahmudul Alam</p>
+          <p><strong>TheOtherGuyske</strong> © {% now 'Y' %}, All Rights Reserved, Design & Developed By TOGke</p>
         </div>
       </div>
     </div>

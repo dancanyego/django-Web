@@ -14,12 +14,12 @@
   <div class="container">
     <div class="row">
       <div class="col-md-7">
-        <h1>Get Appointment</h1>
+        <h1>Feel free to Donate</h1>
       </div>
       <div class="col-md-5">
         <ol class="breadcrumb">
           <li><a href="{% url 'index' %}">Home</a></li>
-          <li class="active">Appointment</li>
+          <li class="active">Donate</li>
         </ol>
       </div>
     </div>
@@ -32,7 +32,7 @@
   <section class="appointment-form">
     <div class="container">
       <div class="row">
-        <div class="col-md-6"><img src="{% static 'heartcare/images/form-pic.jpg' %}" alt=""></div>
+        <div class="col-md-6"><img src="{% static 'heartcare/images/hebrews.jpeg' %}" alt=""></div>
         <div class="col-md-6">
           <form action="{% url 'appointment' %}" method="post">
             {% csrf_token %}
@@ -48,7 +48,7 @@
               </div>
               <div class="col-md-6 col-sm-6">
                 <select name="doctor">
-                  <option disabled>--Doctor--</option>
+                  <option disabled>--Donate to --</option>
                   {% for doctor in doctors %}
                   <option value="{{ doctor.id }}">{{ doctor.name }}</option>
                   {% endfor %}
@@ -67,8 +67,8 @@
                 </select>
               </div>
               <div class="col-md-12 text-center">
-                <textarea placeholder="Extra Note" name="note"></textarea>
-                <input value="Book Appointment" type="submit">
+                <textarea placeholder="Kindly Enter The Items to Donate" name="note"></textarea>
+                <input value="Donate" type="submit">
               </div>
             </div>
           </form>
